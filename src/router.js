@@ -18,9 +18,15 @@ export default new Router({
       component: Scheme
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
+      path: '/v-if',
+      name: 'v-if',
+      component: () => import('./views/If.vue')
+    },
+    {
+      path: '/v-model',
+      name: 'v-model',
+      component: () => import('./views/Model.vue'),
+      props: { some: false }
     }
   ]
 })
